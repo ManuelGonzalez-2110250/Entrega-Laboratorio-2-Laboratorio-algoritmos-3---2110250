@@ -87,7 +87,7 @@ fun cargarDatos(sudokuStr: String): Array<Int>?{
     return Datos
 }
 
-fun cargarDatos(args: Array<String>){
+fun main(args: Array<String>){
     val entrada: String = args[0]
     var sudoku: Array<Int>? = cargarDatos(entrada)
     if(sudoku == null){
@@ -104,3 +104,4 @@ fun cargarDatos(args: Array<String>){
     }
     
 }
+
