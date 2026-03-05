@@ -1,11 +1,14 @@
 >Manuel González_21-10250
 
-##Para ejecutar:
+
+## Para ejecutar:
+
+
 Primero se debe ejecutar el CMD en la carpeta dónde está descargado el archivo, luego se usa el comando **"make"** para compilar el archivo. Una vez se compile se ejecuta usando el coamndo **./runSudoku.sh "Entrada"**, dónde *"Entrada"* es un string compuesto de números del 0 al 9, de 81 carcacteres, dónde 0 representa el espacio vacío en el sudoku y los números se ordenan por las filas, por ejemplo el sudoku:
 
 1 |2 |3 |4|5|6|7|8|9
-|-|-|-|-|-|-|-|-|-|-|
-5|3| | | 7| 
+|-|-|-|-|-|-|-|-|-|
+5|3| | | 7|  | | | |
 6 | | | 1 |9 |5 
 | |9 |8| | | | |6|
 8| | |  |6| | | | 3
@@ -25,7 +28,7 @@ tendría la siguiente entrada:
 >Orden de las funciones: No se puede hablar del orden de las funciones con exactitud al tener *"hardcoded"* el tamaño del sudoku en 81. La funciòn principal de "ResolverSudoku" si se viese en representación O() serìa similar a O(n * n² * 3n) = O(n⁴) con n siendo el for de 1 a 9, n² el tamaño del sudoku y 3n la función de SePuedeAñadir
 
 
-##Para el diseño de la funciones:
+## Para el diseño de la funciones:
 
 **ResolverSudoku:** Función inicial, usa la funcion auxiliar "SePuedeAñadir", se diseñò usando como referencia el algoritmo de ejemplo visto en clases de laboratorio de algoritmos, pero realizando cambios pertinentes para que efectivamente pueda comprobar los diferentes casos. Adicionalmente está la lìnea "if(solucion.size != 0) return true" para detenerse al hayar una solución, la cual puede ser cambiada para encontrar todas las posibles soluciones, o la cantidad de soluciones deseadas.
 
